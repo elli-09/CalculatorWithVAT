@@ -278,6 +278,29 @@ double a = 0;
                             Console.WriteLine("Invalid option!");
                         }
                     }
+                else if (command == "3")
+                    {
+                        Console.WriteLine("You chose History.");
+                        history.ShowHistory();
+                    }
+                    else if (command == "4")
+                    {
+                        Console.WriteLine("Goodbye!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid option!");
+                    }
                 }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Error! Please enter a valid number.");
+                }
+                catch (OverflowException)
+                {
+                    Console.WriteLine("Error! The number is too large or too small.");
+                }
+            }
+        }
     }
 }
