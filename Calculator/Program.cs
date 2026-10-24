@@ -128,6 +128,81 @@ double a = 0;
                         Console.WriteLine("7. Exit");
 
                         string option = Console.ReadLine();
+                         if (option == "1" || option == "2" ||
+                            option == "3" || option == "4" ||
+                            option == "5" || option == "6")
+                        {
+                            Console.WriteLine("Enter the first number:");
+                            a = double.Parse(Console.ReadLine());
+
+                            Console.WriteLine("Enter the second number:");
+                            b = double.Parse(Console.ReadLine());
+
+                            bool valid = true;
+                            string record = "";
+
+                            if (option == "1")
+                            {
+                                result = op.Addition(a, b);
+                                record = a + " + " + b + " = " + result;
+                            }
+                            else if (option == "2")
+                            {
+                                result = op.Subtraction(a, b);
+                                record = a + " - " + b + " = " + result;
+                            }
+                            else if (option == "3")
+                            {
+                                result = op.Multiplication(a, b);
+                                record = a + " * " + b + " = " + result;
+                            }
+                            else if (option == "4")
+                            {
+                                if (b != 0)
+                                {
+                                    result = op.Division(a, b);
+                                    record = a + " / " + b + " = " + result;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("You cannot divide by zero!");
+                                    valid = false;
+                                }
+                            }
+                            else if (option == "5")
+                            {
+                                result = op.Procents(a, b);
+                                record = b + "% of " + a + " = " + result;
+                            }
+                            else if (option == "6")
+                            {
+                                if (b != 0)
+                                {
+                                    result = op.DivisionWithProcents(a, b);
+                                    record = a + " % " + b + " = " + result;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("You cannot divide by zero!");
+                                    valid = false;
+                                }
+                            }
+
+                            if (valid)
+                            {
+                                Console.WriteLine("The result is: " + result);
+                                history.AddRecord(record);
+                            }
+                        }
+                        else if (option == "7")
+                        {
+                            Console.WriteLine("Returning to main menu.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid option!");
+                        }
+                    }
         }
     }
 }
