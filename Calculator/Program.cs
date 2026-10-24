@@ -92,7 +92,42 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
+double a = 0;
+            double b = 0;
+            double result = 0;
 
+            Operations op = new Operations();
+            OperationsVAT opVAT = new OperationsVAT();
+            History history = new History();
+
+            Console.WriteLine("Welcome! This is my calculator.");
+
+            while (command != "4")
+            {
+                Console.WriteLine();
+                Console.WriteLine("Please, choose an option:");
+                Console.WriteLine("1. For calculator");
+                Console.WriteLine("2. For calculator with VAT");
+                Console.WriteLine("3. History");
+                Console.WriteLine("4. Exit");
+
+                try
+                {
+                   string command = Console.ReadLine();
+
+                    if (command == "1")
+                    {
+                        Console.WriteLine("You chose calculator.");
+                        Console.WriteLine("Please, choose an option:");
+                        Console.WriteLine("1. Addition");
+                        Console.WriteLine("2. Subtraction");
+                        Console.WriteLine("3. Multiplication");
+                        Console.WriteLine("4. Division");
+                        Console.WriteLine("5. Procents");
+                        Console.WriteLine("6. Division with Procents");
+                        Console.WriteLine("7. Exit");
+
+                        string option = Console.ReadLine();
         }
     }
 }
