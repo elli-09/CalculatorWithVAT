@@ -52,7 +52,6 @@ namespace Calculator
         public double RemoveVAT(double amountWithVAT, double vatPercent)
         {
             double amount = amountWithVAT / (1 + vatPercent / 100);
-            Math.Round(amount, 2);
             return amount;
         }
         public double CalculateDiscount(double amount, double discountPercent)
@@ -275,7 +274,7 @@ namespace Calculator
                                 {
                                     if (b != -100)
                                     {
-                                        result = opVAT.RemoveVAT(a, b);
+                                        result = Math.Round(opVAT.RemoveVAT(a, b),2);
                                         record = "Remove VAT: " + a + ", " + b + "% = " + result;
                                     }
                                     else
@@ -333,9 +332,11 @@ namespace Calculator
                 {
                     Console.WriteLine("Error! The number is too large or too small.");
                 }
-            }
-        }
-    }
+            } 
+        }     
+    }         
+}             
 
-}
-}
+
+
+

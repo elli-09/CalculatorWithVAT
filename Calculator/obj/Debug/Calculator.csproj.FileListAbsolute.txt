@@ -1,2 +1,7 @@
 D:\EleonoraPetkova\Calculator\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
 D:\EleonoraPetkova\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+D:\EleonoraPetkova\Calculator\Calculator\bin\Debug\Calculator.exe.config
+D:\EleonoraPetkova\Calculator\Calculator\bin\Debug\Calculator.exe
+D:\EleonoraPetkova\Calculator\Calculator\bin\Debug\Calculator.pdb
+D:\EleonoraPetkova\Calculator\Calculator\obj\Debug\Calculator.exe
+D:\EleonoraPetkova\Calculator\Calculator\obj\Debug\Calculator.pdb
