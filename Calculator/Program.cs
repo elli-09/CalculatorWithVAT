@@ -86,6 +86,22 @@ namespace Calculator
                 records[2] = record;
             }
         }
+        public void ShowHistory()
+        {
+            if (count == 0)
+            {
+                Console.WriteLine("History is empty.");
+            }
+            else
+            {
+                Console.WriteLine("Last operations:");
+
+                for (int i = 0; i < count; i++)
+                {
+                    Console.WriteLine(records[i]);
+                }
+            }
+        }
 
     }
 
