@@ -1,0 +1,2 @@
+D:\EleonoraPetkova\Calculator\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+D:\EleonoraPetkova\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
