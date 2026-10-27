@@ -286,7 +286,8 @@ namespace Calculator
                                 else if (option == "4")
                                 {
                                     result = opVAT.CalculateDiscount(a, b);
-                                    record = "Discount: " + b + "% of " + a + " = " + result;
+                                    record = "Discount: " + b + "% of " + a + " = " + result; 
+
                                 }
                                 else if (option == "5")
                                 {
